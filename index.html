@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset-"utf-8"/>
-    <title> zzu </title>
-    <style>
-        touxiang {
-            display: block;
-            width: 150px;
-            height: 170px;
-            text-decoration: none;
-        }
-        touxiang:hover {
-            color: rgb(255 106 0);
-            text-decoration: underline;
-        }
-        .tx_div {
-            text-align: center;
-        }
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
 
-    </style>
-  </head>
-  <body>
-    <div class="tx_div">
-        <a class="touxiang" target="_blank" href="https://user.qzone.qq.com/83788165/infocenter">
-            <img src="./头像.jpg" width="150" height="150" alt="Alternate Text" />
-            <br />
-            zzu
-        </a>
-    </div>
-    <hr />
-  </body>
-</htlm>
+<div id="overlay">
+  <ul>
+    <li class="title">Select Music</li>
+    <li>
+      <button class="btn" id="btnA" type="button">
+        Snowflakes Falling Down by Simon Panrucker
+      </button>
+    </li>
+    <li><button class="btn" id="btnB" type="button">This Christmas by Dott</button></li>
+    <li><button class="btn" id="btnC" type="button">No room at the inn by TRG Banks</button></li>
+    <li><button class="btn" id="btnD" type="button">Jingle Bell Swing by Mark Smeby</button></li>
+    <li class="separator">OR</li>
+    <li>
+      <input type="file" id="upload" hidden />
+      <label for="upload">Upload File</label>
+    </li>
+  </ul>
+</div>
